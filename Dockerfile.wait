@@ -1,0 +1,8 @@
+FROM seepine/alpine
+
+LABEL maintainer="seepine <seepine@outlook.com>"
+
+COPY --chown=root:root ./wait-for-it/ /usr/local/bin
+RUN chmod -R +x /usr/local/bin \
+  && apk add --no-cache bash
+ENV WAIT_TIMEOUT=30

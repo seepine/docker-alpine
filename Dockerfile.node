@@ -1,0 +1,5 @@
+FROM seepine/alpine:glibc
+
+LABEL maintainer="seepine <seepine@outlook.com>"
+
+RUN apk add --no-cache nodejs npm yarn

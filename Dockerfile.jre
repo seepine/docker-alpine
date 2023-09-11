@@ -1,0 +1,6 @@
+FROM seepine/alpine:wait
+
+LABEL maintainer="seepine <seepine@outlook.com>"
+
+ARG JAVA_VERSION
+RUN apk add --no-cache openjdk${JAVA_VERSION} ttf-dejavu fontconfig curl
